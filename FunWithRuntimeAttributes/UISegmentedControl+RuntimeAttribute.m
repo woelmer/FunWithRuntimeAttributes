@@ -29,5 +29,4 @@
     return (font != nil) ? @(font.pointSize) : @15.0;
 }
 
-
 @end
