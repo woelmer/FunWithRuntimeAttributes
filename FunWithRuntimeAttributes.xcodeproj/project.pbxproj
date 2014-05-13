@@ -14,13 +14,14 @@
 		CB10D35A192276C0007B7ADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB10D359192276C0007B7ADD /* main.m */; };
 		CB10D35E192276C0007B7ADD /* FRAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB10D35D192276C0007B7ADD /* FRAAppDelegate.m */; };
 		CB10D361192276C0007B7ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB10D35F192276C0007B7ADD /* Main.storyboard */; };
-		CB10D364192276C0007B7ADD /* FRAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB10D363192276C0007B7ADD /* FRAViewController.m */; };
 		CB10D366192276C0007B7ADD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB10D365192276C0007B7ADD /* Images.xcassets */; };
 		CB10D36D192276C0007B7ADD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB10D36C192276C0007B7ADD /* XCTest.framework */; };
 		CB10D36E192276C0007B7ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB10D34D192276C0007B7ADD /* Foundation.framework */; };
 		CB10D36F192276C0007B7ADD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB10D351192276C0007B7ADD /* UIKit.framework */; };
 		CB10D377192276C0007B7ADD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB10D375192276C0007B7ADD /* InfoPlist.strings */; };
 		CB10D379192276C0007B7ADD /* FunWithRuntimeAttributesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB10D378192276C0007B7ADD /* FunWithRuntimeAttributesTests.m */; };
+		CB10D386192278FE007B7ADD /* CALayer+RuntimeAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = CB10D383192278FE007B7ADD /* CALayer+RuntimeAttribute.m */; };
+		CB10D387192278FE007B7ADD /* UISegmentedControl+RuntimeAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = CB10D385192278FE007B7ADD /* UISegmentedControl+RuntimeAttribute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		CB10D35C192276C0007B7ADD /* FRAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRAAppDelegate.h; sourceTree = "<group>"; };
 		CB10D35D192276C0007B7ADD /* FRAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRAAppDelegate.m; sourceTree = "<group>"; };
 		CB10D360192276C0007B7ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CB10D362192276C0007B7ADD /* FRAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRAViewController.h; sourceTree = "<group>"; };
-		CB10D363192276C0007B7ADD /* FRAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRAViewController.m; sourceTree = "<group>"; };
 		CB10D365192276C0007B7ADD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB10D36B192276C0007B7ADD /* FunWithRuntimeAttributesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunWithRuntimeAttributesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB10D36C192276C0007B7ADD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CB10D374192276C0007B7ADD /* FunWithRuntimeAttributesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunWithRuntimeAttributesTests-Info.plist"; sourceTree = "<group>"; };
 		CB10D376192276C0007B7ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB10D378192276C0007B7ADD /* FunWithRuntimeAttributesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunWithRuntimeAttributesTests.m; sourceTree = "<group>"; };
+		CB10D382192278FE007B7ADD /* CALayer+RuntimeAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+RuntimeAttribute.h"; sourceTree = "<group>"; };
+		CB10D383192278FE007B7ADD /* CALayer+RuntimeAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+RuntimeAttribute.m"; sourceTree = "<group>"; };
+		CB10D384192278FE007B7ADD /* UISegmentedControl+RuntimeAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+RuntimeAttribute.h"; sourceTree = "<group>"; };
+		CB10D385192278FE007B7ADD /* UISegmentedControl+RuntimeAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+RuntimeAttribute.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,13 @@
 		CB10D353192276C0007B7ADD /* FunWithRuntimeAttributes */ = {
 			isa = PBXGroup;
 			children = (
+				CB10D382192278FE007B7ADD /* CALayer+RuntimeAttribute.h */,
+				CB10D383192278FE007B7ADD /* CALayer+RuntimeAttribute.m */,
+				CB10D384192278FE007B7ADD /* UISegmentedControl+RuntimeAttribute.h */,
+				CB10D385192278FE007B7ADD /* UISegmentedControl+RuntimeAttribute.m */,
 				CB10D35C192276C0007B7ADD /* FRAAppDelegate.h */,
 				CB10D35D192276C0007B7ADD /* FRAAppDelegate.m */,
 				CB10D35F192276C0007B7ADD /* Main.storyboard */,
-				CB10D362192276C0007B7ADD /* FRAViewController.h */,
-				CB10D363192276C0007B7ADD /* FRAViewController.m */,
 				CB10D365192276C0007B7ADD /* Images.xcassets */,
 				CB10D354192276C0007B7ADD /* Supporting Files */,
 			);
@@ -250,8 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB10D364192276C0007B7ADD /* FRAViewController.m in Sources */,
 				CB10D35E192276C0007B7ADD /* FRAAppDelegate.m in Sources */,
+				CB10D386192278FE007B7ADD /* CALayer+RuntimeAttribute.m in Sources */,
+				CB10D387192278FE007B7ADD /* UISegmentedControl+RuntimeAttribute.m in Sources */,
 				CB10D35A192276C0007B7ADD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
